@@ -1,0 +1,202 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+//header
+.header {
+  position: relative;
+  &__content {
+    padding: 62px 0 65px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 130%;
+    max-width: 821px;
+    margin-bottom: 18px;
+  }
+  &__title-red {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 130%;
+    color: #E82C2B;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 400px 450px;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 35px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item-img {}
+  &__item-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__decore-img {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.main {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  border-bottom: 1px solid #EBDFDF;
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__icon{
+    margin-right: 10px;
+  }
+  &__inner-col {
+    display: flex
+  }
+  &__contacts-num {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #231F20;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #231F20;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__list-link--red {
+    color: #E21C21;
+  }
+}
+
+.form {
+  padding: 14px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 34px rgba(227, 227, 227, 0.25);
+  border-radius: 15px;
+  max-width: 855px;
+  &__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 17px;
+  }
+  &__text-bold{
+    font-weight: 500;
+  }
+  &__input {
+    box-shadow: inset 0px 0px 39px rgba(180, 180, 180, 0.25);
+    border-radius: 150px;
+    padding: 31px 20px 31px 67px;
+    border: none;
+    width: 100%;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  &__input::placeholder{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #000000;
+  }
+  &__box-inp{
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 38px;
+      bottom: 0;
+      left: 44px;
+      width: 17px;
+      height: 17px;
+      background-image: url(../img/tel-ic.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+  }
+  &__btn {
+    position: relative;
+    background: #E82C2B;
+    border-radius: 150px;
+    border: none;
+    padding: 29px 77px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    cursor: pointer;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -139px;
+        width: 50px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.32);
+        transform: translateX(10em) skewX(-30deg);
+      }
+  }
+  
+  &__checkbox {}
+  &__checkbox-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #868686;
+  }
+  &__flex {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+  &__italic {
+    font-style: italic;
+  }
+  &__inner{
+    padding: 28px 29px 22px;
+    border: 1px dashed #ECECEC;
+    border-radius: 15px;
+  }
+}
+// header
+
+
+
+
+
+@import 'media';

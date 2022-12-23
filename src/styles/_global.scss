@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
