@@ -23,6 +23,7 @@ $(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
         }
       },
       {
@@ -41,6 +42,29 @@ $(function () {
     $('.header__nav').toggleClass('open-menu');
     $('body').toggleClass('fixed-page');
   });
+
+  $('.popup-open').click(function() {
+		$('.popup-fade').fadeIn();
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
 
 
   $("#phone").mask("+7 (999) 999-99-99");
