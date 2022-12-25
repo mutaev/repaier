@@ -15,35 +15,35 @@
   <header class="header">
     <div class="container">
       
-      <div class="main">
+      <div class="main main__padd" id="main">
         <a class="main__logo" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
 
-        <nav class="menu">
+        <nav class="menu none">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ГЛАВНАЯ</a>
+              <a class="menu__list-link" href="#main">ГЛАВНАЯ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">УСЛУГИ</a>
+              <a class="menu__list-link" href="#services">УСЛУГИ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ПРОЦЕСС РАБОТЫ</a>
+              <a class="menu__list-link" href="#example">ПРОЦЕСС РАБОТЫ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--red" href="#">О НАС</a>
+              <a class="menu__list-link menu__list-link--red" href="#about">О НАС</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--red" href="#">КОНТАКТЫ</a>
+              <a class="menu__list-link menu__list-link--red" href="#contacts">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
 
-        <div class="main__contacts">
+        <div class="main__contacts main__contacts--none">
           <div class="main__inner-col">
             <a href="tel:+79882399023">
               <img class="main__icon" src="img/num-ic.png" alt="icon">
@@ -60,6 +60,32 @@
           </div>
         </div>
 
+        <div class="menu-burger__header">
+          <span></span>
+        </div>
+        
+        <nav class="header__nav">
+          <ul class="header__menu menu__list">
+            <li class="menu__list-item  menu__list-link--burg">
+              <a class="menu__list-link menu__list-link--panel" href="#main">ГЛАВНАЯ</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--panel" href="#services">УСЛУГИ</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--panel" href="#example">ПРОЦЕСС РАБОТЫ</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--panel" href="#reviews">ОТЗЫВЫ</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--red menu__list-link--panel" href="#about">О НАС</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--red menu__list-link--panel" href="#contacts">КОНТАКТЫ</a>
+            </li>
+        </nav>
+
       </div>
 
       <div class="header__content">
@@ -67,20 +93,20 @@
         <div class="header__text">Предоставляем широкий спектр услуг</div>
         <div class="header__items">
           <div class="header__item">
-            <img class="header__item-img" src="img/header-item1.png" alt="image">
+            <img class="header__item-img header__item-img--marg" src="img/header-item1.png" alt="image">
             <p class="header__item-text">Промывка систем отопления</p>
           </div>
           <div class="header__item">
             <img class="header__item-img" src="img/header-item2.png" alt="image">
-            <p class="header__item-text">Промывка бойлера</p>
+            <p class="header__item-text header__item-text--marg">Промывка бойлера</p>
           </div>
           <div class="header__item">
-            <img class="header__item-img" src="img/header-item3.png" alt="image">
+            <img class="header__item-img header__item-img--marg" src="img/header-item3.png" alt="image">
             <p class="header__item-text">Промывка котла отопления</p>
           </div>
           <div class="header__item">
             <img class="header__item-img" src="img/header-item4.png" alt="image">
-            <p class="header__item-text">Производство оборудования для промывки систем отопления</p>
+            <p class="header__item-text header__item-text--marg">Производство оборудования для промывки систем отопления</p>
           </div>
         </div>
 
@@ -89,11 +115,11 @@
             <p class="form__text">
               Перезвоним <span class="form__text-bold">в течении 10 минут и назначим выезд специалиста</span> 
             </p>
-            <div class="form__flex">
+            <div class="form__flex form__flex--column">
               <div class="form__box-inp">
                 <input class="form__input" type="tel" placeholder="Ваш номер телефона (+7 ... )" id="phone">
               </div>
-              <button type="submit" class="form__btn">Вызвать мастера</button><br>
+              <button type="submit" class="form__btn form__btn--padd ">Вызвать мастера</button><br>
             </div>
             <input class="form__checkbox" type="checkbox" id="check">
             <label class="form__checkbox-text" for="check">
@@ -140,7 +166,7 @@
     </div>
   </div>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2 class="services__title">Наши услуги</h2>
 
@@ -237,7 +263,9 @@
 
       <div class="services__info">
         <div class="services__info-inner">
-          <img class="services__info-img" src="img/ser5.png" alt="image">
+          <div>
+            <img class="services__info-img" src="img/ser5.png" alt="image">
+          </div>
           <div class="services__info-box">
             <h3 class="services__info-title">
               Производим и продаем оборудование для промывки систем отопления
@@ -259,7 +287,7 @@
       <div class="example__inner">
 
         <div class="example__content">
-          <h2 class="example__title">Как происходит промывка оборудования?</h2>
+          <h2 class="example__title" id="example">Как происходит промывка оборудования?</h2>
           <p class="example__text">
             Профессиональное оборудование, разработанное для решения самых сложных задач. Огромный опыт, приобретенный с годами работы. Собственные эффективные и безопасные методики промывки систем отопления в Москвской области.
           </p>
@@ -277,11 +305,11 @@
               <p class="form__text">
                 Перезвоним <span class="form__text-bold">в течении 10 минут и назначим выезд специалиста</span> 
               </p>
-              <div class="form__flex">
+              <div class="form__flex form__flex--media">
                 <div class="form__box-inp">
-                  <input class="form__input" type="tel" placeholder="Ваш номер телефона (+7 ... )" id="phone">
+                  <input class="form__input" type="tel" placeholder="Ваш номер телефона (+7 ... )" id="phone2">
                 </div>
-                <button type="submit" class="form__btn">Вызвать мастера</button><br>
+                <button type="submit" class="form__btn form__btn--padd1">Вызвать мастера</button><br>
               </div>
               <input class="form__checkbox" type="checkbox" id="check">
               <label class="form__checkbox-text" for="check">
@@ -309,7 +337,7 @@
       <h2 class="reviews__title">
         Промывка отопления в <span class="reviews__title-red">Московской области</span><br> - отзывы наших клиентов
       </h2>
-      <p class="reviews__subtitle">Только реальные отзывы с реальных объектов</p>
+      <p class="reviews__subtitle" id="reviews">Только реальные отзывы с реальных объектов</p>
       <div class="reviews__inner">
 
         <button class="prev slick-arrow">
@@ -508,7 +536,7 @@
     <div class="container">
       <div class="about__top">
         <div class="about__content">
-          <h3 class="about__title">
+          <h3 class="about__title" id="about">
             О нашей компании
           </h3>
           <p class="about__text">
@@ -528,7 +556,9 @@
             ОГРН: 319502700036152
           </p>
         </div>
-        <img src="img/about-big-img.png" alt="image">
+        <div>
+          <img src="img/about-big-img.png" alt="image">
+        </div>
       </div>
 
       <div class="about__flex">
@@ -542,36 +572,78 @@
 
   <section class="contacts">
     <div class="container">
+      <div class="contacts__inner">
+        <div class="" style="position:relative;overflow:hidden;"><a  href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/leninskiy_prospekt_22/Z04Ycw5hT0EAQFtvfXtwdHtlbA==/?ll=37.586870%2C55.717277&utm_medium=mapframe&utm_source=maps&z=13.94" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ленинский проспект, 22 — Яндекс Карты</a><iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUrUSBD9C" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
+        <address class="contacts__info">
+          <h3 class="contacts__title" id="contacts">
+            Контакты
+          </h3>
+          <div class="contacts__info-block">
+            <p class="contacts__text contacts__text--margin">Номер телефона</p>
+            <a class="contacts__link-tel" href="tel:+79882399023">8 (988) 23-990-23</a>
+            <p class="contacts__text">Ежедневно с 10.00 до 20.00</p>
+          </div>
+          <div class="contacts__info-block">
+            <p class="contacts__text contacts__text--margin">Електронная почта</p>
+            <a class="contacts__link-mail" href="mailto:Domsogrey@mail.ru">Domsogrey@mail.ru</a>
+            <p class="contacts__text">Ежедневно с 10.00 до 20.00</p>
+          </div>
+          <div class="contacts__info-block">
+            <p class="contacts__text contacts__text--margin">Адресс</p>
+            <p class="contacts__adress" href="mailto:Domsogrey@mail.ru">г. Москва, Ленинский 22</p>
+            <p class="contacts__text">Ежедневно с 9.00 до 20.00</p>
+          </div>
+        </address>
+        
+        <form class="form form__contacts">
+          <div class="form__inner">
+            <p class="form__text">
+              Перезвоним <span class="form__text-bold">в течении 10 минут и назначим выезд специалиста</span> 
+            </p>
+            <div class="form__flex form__flex--column">
+              <div class="form__box-inp">
+                <input class="form__input" type="tel" placeholder="Ваш номер телефона (+7 ... )" id="phone3">
+              </div>
+              <button type="submit" class="form__btn form__btn--padd ">Вызвать мастера</button><br>
+            </div>
+            <input class="form__checkbox" type="checkbox" id="check">
+            <label class="form__checkbox-text" for="check">
+              Я ознакомился и даю согласие на <u class="form__italic">обработку персональных данных</u>
+            </label>
+          </div>
+        </form> 
+
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="main">
+      <div class="main main__column">
         <a class="main__logo" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
 
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--column">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ГЛАВНАЯ</a>
+              <a class="menu__list-link" href="#main">ГЛАВНАЯ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">УСЛУГИ</a>
+              <a class="menu__list-link" href="#services">УСЛУГИ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ПРОЦЕСС РАБОТЫ</a>
+              <a class="menu__list-link" href="#example">ПРОЦЕСС РАБОТЫ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--red" href="#">О НАС</a>
+              <a class="menu__list-link menu__list-link--red" href="#about">О НАС</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--red" href="#">КОНТАКТЫ</a>
+              <a class="menu__list-link menu__list-link--red" href="#contacts">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>

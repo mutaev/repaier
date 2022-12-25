@@ -31,7 +31,7 @@
   }
   &__items {
     display: grid;
-    grid-template-columns: 400px 450px;
+    grid-template-columns: 425px 425px;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 35px;
   }
@@ -124,7 +124,7 @@
     padding: 31px 20px 31px 67px;
     border: none;
     width: 100%;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
   }
   &__input::placeholder{
@@ -183,6 +183,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 26px;
+    align-items: center;
   }
   &__italic {
     font-style: italic;
@@ -254,7 +255,6 @@
   }
   &__item-img {
     border-radius: 15px;
-    max-width: 601px;
     margin-bottom: 40px;
   }
   &__item-title {
@@ -273,17 +273,15 @@
   }
   &__list {
     background: #FCFCFC;
-    width: 657px;
-    position: relative;
-    right: 30px;
+    border-radius: 5%;
   }
   &__list-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
   &__list-item:last-child{
     margin-bottom: 0;
@@ -356,7 +354,7 @@
 //example
 .example {
   margin-bottom: 209px;
-  max-height: 912px;
+  min-height: 912px;
   position: relative;
   z-index: 1;
   padding: 90px 0 70px;
@@ -404,10 +402,6 @@
   }
 }
 
-.form__example{
-  position: relative;
-  bottom: -60px;
-}
 //example
 
 //reviews
@@ -496,6 +490,7 @@
 
 //about
 .about {
+  margin-bottom: 50px;
   position: relative;
   &__dec1 {
     position: absolute;
@@ -528,10 +523,9 @@
     line-height: 22px;
   }
   &__flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: 23px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 23px;
   }
   &__dec2 {
     position: absolute;
@@ -541,6 +535,72 @@
   }
 }
 //about
+
+
+//contants
+.contacts {
+  margin-bottom: 195px;
+  &__inner {
+    position: relative;
+  }
+  &__map {
+    width: 100%;
+    height: 700px;
+    border: none;
+  }
+  &__info {
+    background: #E82C2B;
+    max-width: 576px;
+    width: 100%;
+    padding: 71px 50px 164px;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 51px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 29px;
+  }
+  &__info-block {
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__text--margin {
+    margin-bottom: 16px;
+  }
+  &__link-tel,
+  &__link-mail,
+  &__adress {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &__link-mail {}
+  &__adress {
+  }
+}
+
+.form {
+  &__contacts {
+    position: absolute;
+    bottom: -148px;
+    left: 1px;
+  }
+}
+
+//contants
 
 //footer
 .footer {
@@ -553,6 +613,9 @@
   &__text {}
 }
 //footer
+
+
+
 
 
 @import 'media';
